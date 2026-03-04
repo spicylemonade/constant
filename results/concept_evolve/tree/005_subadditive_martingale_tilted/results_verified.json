@@ -1,0 +1,12 @@
+{
+  "N": 1000,
+  "W": 100,
+  "M": 1000000,
+  "empirical_mean": 803.416863,
+  "empirical_ratio": 0.803416863,
+  "hoeffding_margin": 0.0037169221888498387,
+  "provable_lower_bound": 0.7996999408111501,
+  "time_s": 2619.281460046768,
+  "raw_trials_file": "raw_trials.npy",
+  "raw_trials_hash_sha256": "ae1f6587b5b2b0fe264c4bb8e356143b3af09df57592c6309630648f0b5170f2"
+}
