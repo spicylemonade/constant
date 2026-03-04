@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.3.2)  4 MAR 2026 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.3.2)  4 MAR 2026 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -697,9 +697,9 @@ Overfull \hbox (21.31197pt too wide) in paragraph at lines 120--135
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 297.
+put line 298.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-58.
+59.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -710,7 +710,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [4]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-46.
+47.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -719,31 +719,31 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: figures/histogram_lcs_ratios.pdf Graphic file (type pdf)
 <use figures/histogram_lcs_ratios.pdf>
 Package pdftex.def Info: figures/histogram_lcs_ratios.pdf  used on input line 5
-09.
+10.
 (pdftex.def)             Requested size: 385.02547pt x 199.88208pt.
  [6]
 <figures/comparison_lower_bounds.pdf, id=305, 473.06737pt x 301.74092pt>
 File: figures/comparison_lower_bounds.pdf Graphic file (type pdf)
 <use figures/comparison_lower_bounds.pdf>
 Package pdftex.def Info: figures/comparison_lower_bounds.pdf  used on input lin
-e 528.
+e 529.
 (pdftex.def)             Requested size: 217.42265pt x 138.67819pt.
 <figures/timeline_lower_bounds.pdf, id=306, 477.58424pt x 294.66762pt>
 File: figures/timeline_lower_bounds.pdf Graphic file (type pdf)
 <use figures/timeline_lower_bounds.pdf>
 Package pdftex.def Info: figures/timeline_lower_bounds.pdf  used on input line 
-534.
+535.
 (pdftex.def)             Requested size: 217.42265pt x 134.1459pt.
 <figures/sensitivity_heatmap.pdf, id=309, 405.5305pt x 310.18573pt>
 File: figures/sensitivity_heatmap.pdf Graphic file (type pdf)
 <use figures/sensitivity_heatmap.pdf>
 Package pdftex.def Info: figures/sensitivity_heatmap.pdf  used on input line 57
-3.
+4.
 (pdftex.def)             Requested size: 249.13371pt x 190.56194pt.
 <figures/convergence_with_M.pdf, id=312, 463.45622pt x 293.66386pt>
 File: figures/convergence_with_M.pdf Graphic file (type pdf)
 <use figures/convergence_with_M.pdf>
-Package pdftex.def Info: figures/convergence_with_M.pdf  used on input line 590
+Package pdftex.def Info: figures/convergence_with_M.pdf  used on input line 591
 .
 (pdftex.def)             Requested size: 385.02547pt x 243.97395pt.
  [7 <./figures/histogram_lcs_ratios.pdf>] [8 <./figures/comparison_lower_bounds
@@ -759,11 +759,11 @@ Package rerunfilecheck Info: File `research_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 4B461699706CDDC4E8DBA2C052104DAB;5592.
  ) 
 Here is how much of TeX's memory you used:
- 17810 strings out of 477975
- 297092 string characters out of 5839282
+ 17816 strings out of 477975
+ 297156 string characters out of 5839282
  1869330 words of memory out of 5000000
  37297 multiletter control sequences out of 15000+600000
- 607144 words of font info for 215 fonts, out of 8000000 for 9000
+ 607393 words of font info for 218 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  75i,12n,77p,1011b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
@@ -781,7 +781,7 @@ ts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on research_paper.pdf (12 pages, 451506 bytes).
+Output written on research_paper.pdf (12 pages, 453297 bytes).
 PDF statistics:
  818 PDF objects out of 1000 (max. 8388607)
  504 compressed objects within 6 object streams

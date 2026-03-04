@@ -193,7 +193,8 @@ closely related to LCS.
 
 \paragraph{Concentration and convergence rates.}
 Alexander \citep{alexander1994} showed that $\E[\LCS(X_n, Y_n)]/n$ converges to
-$\gamma_2$ at rate $O(n^{-2/3})$, consistent with conjectured KPZ universality.
+$\gamma_2$ at rate $O(\sqrt{n\log n}/n)$; KPZ universality conjectures the
+sharper rate $O(n^{-2/3})$.
 Steele \citep{steele1986} established Efron--Stein-type variance bounds for
 nonsymmetric statistics, applicable to LCS. These concentration results underpin
 the theoretical validity of our approach.
@@ -591,7 +592,7 @@ $0.792666$ \citep{heineman2024} at approximately $M \approx 127{,}000$ trials.
   \caption{Convergence of the provable lower bound (red) and empirical mean
   (blue) as a function of the number of trials $M$. The horizontal green
   line marks the previous best lower bound of $0.792666$
-  \citep{heineman2024}. The provable bound exceeds this at $M \approx 200{,}000$.}
+  \citep{heineman2024}. The provable bound exceeds this at $M \approx 127{,}000$.}
   \label{fig:convergence}
 \end{figure}
 
@@ -640,7 +641,9 @@ FSMs. The concentration bound makes the result rigorous despite the randomness.
 The LCS problem is intimately connected to last-passage percolation (LPP) in
 directed random environments, which belongs to the Kardar--Parisi--Zhang (KPZ)
 universality class. The convergence rate of $\E[\LCS(X_n, Y_n)]/n$ to
-$\gamma_2$ is conjectured to be $O(n^{-2/3})$ \citep{alexander1994}. Our
+$\gamma_2$ is conjectured to be $O(n^{-2/3})$ under KPZ universality
+(Alexander \citep{alexander1994} proved the weaker rate
+$O(\sqrt{n\log n}/n)$). Our
 beam-search heuristic operates on blocks of length $N = 1000$, where the
 finite-$N$ bias is approximately $O(N^{-2/3}) \approx 0.01$. This suggests our
 empirical ratio of $0.8034$ is approximately $\gamma_2 - 0.009$, consistent

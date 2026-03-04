@@ -16,7 +16,7 @@ where μ̂(M) is the sample mean of M i.i.d. trials. The margin shrinks as O(1/�
 | 250,000   | 0.0074          | ~0.796      | Yes          |
 | 1,000,000 | 0.0037          | 0.79970     | Yes          |
 
-From our convergence plot (Figure 4), the provable bound first exceeds H2024's 0.792666 at approximately M ≈ 200,000 trials.
+From our convergence plot (Figure 4), the provable bound first exceeds H2024's 0.792666 at approximately M ≈ 120,000 trials (M ≈ 127,000 at the nearest logspace sample point used in the figure).
 
 **Empirical Bernstein alternative:** Using the sample variance (σ̂² ≈ 4.7 × 10⁻⁵), the Bernstein bound gives margin ≈ 6 × 10⁻⁵ at M = 10⁶, yielding a provable bound of 0.80336. This is much tighter but requires more careful justification.
 
@@ -42,7 +42,7 @@ Increasing W from 50 to 200 improves the ratio by ~0.33 percentage points. The i
 | 1000 | 0.80345        | 0.00674|
 | 2000 | 0.80471        | 0.00606|
 
-Increasing N from 500 to 2000 improves the ratio by ~0.43 percentage points. The finite-N bias decays approximately as O(N^{-2/3}) per Alexander (1994), so larger N gives a tighter lower bound on γ₂.
+Increasing N from 500 to 2000 improves the ratio by ~0.43 percentage points. Alexander (1994) proved the finite-N bias decays as O(√(N log N)/N) = O(√(log N / N)). Under the conjectured KPZ universality class, the decay rate would be O(N^{-2/3}), which is faster. Either way, larger N gives a tighter lower bound on γ₂.
 
 ### Combined Effect
 

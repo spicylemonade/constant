@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "created_at": "2026-03-04T18:35:00Z",
-  "updated_at": "2026-03-04T22:40:52.309642+00:00",
-  "current_agent": "reviewer",
+  "updated_at": "2026-03-04T23:45:00.000000+00:00",
+  "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
       "status": "completed",
@@ -13,8 +13,9 @@
     "researcher": {
       "status": "completed",
       "started_at": "2026-03-04T22:16:26.436235+00:00",
-      "completed_at": "2026-03-04T22:34:49.941625+00:00",
-      "error": null
+      "completed_at": "2026-03-04T23:45:00.000000+00:00",
+      "error": null,
+      "notes": "Revision completed. Fixed: convergence figure caption (M~200K->M~127K), convergence analysis doc (M~200K->M~120K), Alexander convergence rate (proven O(sqrt(n log n)/n) vs conjectured O(n^{-2/3})), bilardi2022 missing journal field. All figures regenerated. Paper recompiles with 0 errors, 0 warnings."
     },
     "writer": {
       "status": "completed",
@@ -283,10 +284,82 @@
         }
       ]
     }
+    ,
+    {
+      "id": "phase_revision",
+      "name": "Revision (Peer Review Response)",
+      "order": 6,
+      "items": [
+        {
+          "id": "item_028",
+          "description": "Verify prior citation fixes: jerrum1996 replaced with lam2015, lueker year 2009, dancik1995 year 1995, kiwi2008 ampersand, dancik1994 @phdthesis",
+          "acceptance_criteria": "sources.bib confirmed to have: lam2015 entry for Numba, lueker2009 year=2009, dancik1995 year=1995, kiwi2008 with 'and' not '&', dancik1994 as @phdthesis. Paper references lam2015 not jerrum1996.",
+          "status": "completed",
+          "notes": "All 5 citation fixes verified as already correctly applied in prior revision pass.",
+          "error": null
+        },
+        {
+          "id": "item_029",
+          "description": "Fix convergence figure caption inconsistency (M~200,000 vs M~127,000)",
+          "acceptance_criteria": "Figure 4 caption in research_paper.tex matches text and figure annotation. All three say approximately M~127,000 (the logspace sample point nearest to the true crossing at M~120,000).",
+          "status": "completed",
+          "notes": "Caption updated from M~200,000 to M~127,000. Text already said M~127,000. Figure annotation dynamically computes M~126,485. All consistent.",
+          "error": null
+        },
+        {
+          "id": "item_030",
+          "description": "Fix convergence_analysis.md crossing point (M~200,000 -> M~120,000)",
+          "acceptance_criteria": "convergence_analysis.md states the correct crossing point of M~120,000 (exact) / M~127,000 (logspace sample).",
+          "status": "completed",
+          "notes": "Updated to state M~120,000 with note about M~127,000 logspace sample.",
+          "error": null
+        },
+        {
+          "id": "item_031",
+          "description": "Clarify Alexander (1994) proven vs conjectured convergence rate",
+          "acceptance_criteria": "Paper and convergence_analysis.md correctly distinguish: Alexander proved O(sqrt(n log n)/n), KPZ universality conjectures O(n^{-2/3}). No false attribution of the conjectured rate to Alexander.",
+          "status": "completed",
+          "notes": "Fixed in research_paper.tex (lines 195-197 and 643-645) and convergence_analysis.md (line 45). Both now correctly attribute the proven rate to Alexander and the conjectured rate to KPZ.",
+          "error": null
+        },
+        {
+          "id": "item_032",
+          "description": "Fix bilardi2022 missing journal field in sources.bib",
+          "acceptance_criteria": "bilardi2022 BibTeX entry has a journal field. BibTeX compiles with zero warnings.",
+          "status": "completed",
+          "notes": "Added journal={arXiv preprint arXiv:2211.07644}. BibTeX now produces zero warnings.",
+          "error": null
+        },
+        {
+          "id": "item_033",
+          "description": "Regenerate all publication figures from current data",
+          "acceptance_criteria": "All 5 figures (timeline, histogram, comparison, convergence, heatmap) regenerated as PNG+PDF in figures/. Figures match current data and labels.",
+          "status": "completed",
+          "notes": "All 5 figures regenerated successfully via generate_figures.py.",
+          "error": null
+        },
+        {
+          "id": "item_034",
+          "description": "Recompile paper and verify zero errors/warnings",
+          "acceptance_criteria": "pdflatex + bibtex produce research_paper.pdf with zero errors and zero warnings. PDF is 12 pages.",
+          "status": "completed",
+          "notes": "Paper compiles cleanly: 12 pages, 453KB, 0 errors, 0 warnings.",
+          "error": null
+        },
+        {
+          "id": "item_035",
+          "description": "Verify raw_trials.npy data integrity and all numerical claims",
+          "acceptance_criteria": "raw_trials.npy: 1M int32 values, mean 803.417, std 6.857, min 736, max 830. Provable bound 0.79970. SHA-256 of file matches results_verified.json.",
+          "status": "completed",
+          "notes": "All values verified: mean=803.416863, std=6.856803, min=736, max=830, ratio=0.803417, margin=0.003717, LB=0.799700. SHA-256 ae1f6587... matches results_verified.json.",
+          "error": null
+        }
+      ]
+    }
   ],
   "summary": {
-    "total_items": 27,
-    "completed": 27,
+    "total_items": 35,
+    "completed": 35,
     "in_progress": 0,
     "failed": 0,
     "pending": 0

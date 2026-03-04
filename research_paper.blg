@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: research_paper.aux
 The style file: plainnat.bst
 Database file #1: sources.bib
-Warning--empty journal in bilardi2022
 You've used 16 entries,
             2773 wiz_defined-function locations,
-            702 strings with 8446 characters,
-and the built_in function-call counts, 6599 in all, are:
-= -- 624
+            703 strings with 8477 characters,
+and the built_in function-call counts, 6600 in all, are:
+= -- 625
 > -- 322
 < -- 13
 + -- 112
 - -- 96
 * -- 492
-:= -- 1063
+:= -- 1064
 add.period$ -- 73
 call.type$ -- 16
 change.case$ -- 79
 chr.to.int$ -- 16
-cite$ -- 33
+cite$ -- 32
 duplicate$ -- 322
 empty$ -- 544
 format.name$ -- 122
-if$ -- 1371
+if$ -- 1372
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 15
 newline$ -- 113
 num.names$ -- 64
-pop$ -- 140
+pop$ -- 138
 preamble$ -- 1
 purify$ -- 64
 quote$ -- 0
 skip$ -- 241
 stack$ -- 0
 substring$ -- 148
-swap$ -- 22
+swap$ -- 23
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 176
-warning$ -- 1
+warning$ -- 0
 while$ -- 59
 width$ -- 0
-write$ -- 254
-(There was 1 warning)
+write$ -- 255
