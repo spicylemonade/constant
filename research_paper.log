@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.3.2)  4 MAR 2026 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.3.2)  4 MAR 2026 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -749,27 +749,9 @@ Package pdftex.def Info: figures/convergence_with_M.pdf  used on input line 590
  [7 <./figures/histogram_lcs_ratios.pdf>] [8 <./figures/comparison_lower_bounds
 .pdf> <./figures/timeline_lower_bounds.pdf> <./figures/sensitivity_heatmap.pdf>
 ] [9 <./figures/convergence_with_M.pdf>] (./research_paper.bbl [10]
-Underfull \hbox (badness 3108) in paragraph at lines 40--47
+Underfull \hbox (badness 3108) in paragraph at lines 33--40
 []\T1/lmr/m/n/10.95 (+20) V. Dancík and M. Pa-ter-son.  Up-per bounds for the e
 x-pected length of a
- []
-
-! Misplaced alignment tab character &.
-<argument> Combinatorics, probability &
-                                        computing
-l.103 ...h{Combinatorics, probability & computing}
-                                                  , 2008.
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 100--107
-[]\T1/lmr/m/n/10.95 (+20) Marcos A. Kiwi and J. A. Soto.  On a spec-u-lated re-
-la-tion be-tween chvá-
  []
 
 [11]) [12] (./research_paper.aux)
@@ -778,7 +760,7 @@ Package rerunfilecheck Info: File `research_paper.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  17810 strings out of 477975
- 297104 string characters out of 5839282
+ 297092 string characters out of 5839282
  1869330 words of memory out of 5000000
  37297 multiletter control sequences out of 15000+600000
  607144 words of font info for 215 fonts, out of 8000000 for 9000
@@ -799,10 +781,10 @@ ts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on research_paper.pdf (12 pages, 450663 bytes).
+Output written on research_paper.pdf (12 pages, 451506 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 505 compressed objects within 6 object streams
+ 818 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
  139 named destinations out of 1000 (max. 500000)
  52002 words of extra memory for PDF output out of 61914 (max. 10000000)
 

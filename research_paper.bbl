@@ -29,21 +29,20 @@ Václav Chvátal and D.~Sankoff.
 \newblock URL
   \url{https://www.semanticscholar.org/paper/4d362fb52bcd99cf8ec64684a742d3afe09fa3b8}.
 
-\bibitem[Dancík(1994)]{dancik1994}
-V.~Dancík.
-\newblock Expected length of longest common subsequences.
-\newblock 1994.
-\newblock URL
-  \url{https://www.semanticscholar.org/paper/0e6c2c4137370c2cc60656fd355be734051bb70f}.
-
-\bibitem[Dancík and Paterson(1994)]{dancik1995}
+\bibitem[Dancík and Paterson(1995)]{dancik1995}
 V.~Dancík and M.~Paterson.
 \newblock Upper bounds for the expected length of a longest common subsequence
   of two binary sequences.
-\newblock \emph{Random Struct. Algorithms}, 1994.
+\newblock \emph{Random Struct. Algorithms}, 1995.
 \newblock \doi{10.1002/rsa.3240060408}.
 \newblock URL
   \url{https://www.semanticscholar.org/paper/65bddcac2f0872419eac5ff494886ba070622740}.
+
+\bibitem[Dancík(1994)]{dancik1994}
+Vladimír Dancík.
+\newblock \emph{Expected Length of Longest Common Subsequences}.
+\newblock PhD thesis, University of Warwick, 1994.
+\newblock URL \url{https://wrap.warwick.ac.uk/id/eprint/107547/}.
 
 \bibitem[Hauser et~al.(2006)Hauser, Martínez, and Matzinger]{hauser2006}
 Raphael~Andreas Hauser, S.~Martínez, and H.~Matzinger.
@@ -82,13 +81,6 @@ M.~Huber and G.~R. Raidl.
 \newblock URL
   \url{https://www.semanticscholar.org/paper/18d5de0751a11e1f1f335086eef7a5dfe20df4b1}.
 
-\bibitem[Jerrum and Sinclair(1996)]{jerrum1996}
-Mark Jerrum and Alistair Sinclair.
-\newblock The {Markov} chain {Monte Carlo} method: An approach to approximate
-  counting and integration.
-\newblock \emph{Approximation Algorithms for NP-hard Problems}, pages 482--520,
-  1996.
-
 \bibitem[Kingman(1968)]{kingman1968}
 J.~F.~C. Kingman.
 \newblock The ergodic theory of subadditive stochastic processes.
@@ -100,10 +92,17 @@ J.~F.~C. Kingman.
 Marcos~A. Kiwi and J.~A. Soto.
 \newblock On a speculated relation between chvátal–sankoff constants of
   several sequences.
-\newblock \emph{Combinatorics, probability & computing}, 2008.
+\newblock \emph{Combinatorics, Probability and Computing}, 2008.
 \newblock \doi{10.1017/S0963548309009900}.
 \newblock URL
   \url{https://www.semanticscholar.org/paper/aabf43442d45cc9433b9e747d3ba0e5500f9fe7c}.
+
+\bibitem[Lam et~al.(2015)Lam, Pitrou, and Seibert]{lam2015}
+Siu~Kwan Lam, Antoine Pitrou, and Stanley Seibert.
+\newblock Numba: A {LLVM}-based {Python} {JIT} compiler.
+\newblock In \emph{Proceedings of the Second Workshop on the LLVM Compiler
+  Infrastructure in HPC}, pages 1--6, 2015.
+\newblock \doi{10.1145/2833157.2833162}.
 
 \bibitem[Li et~al.(2025)Li, Ren, and Wen]{li2025}
 Ray Li, William Ren, and Yiran Wen.
@@ -114,10 +113,10 @@ Ray Li, William Ren, and Yiran Wen.
 \newblock URL
   \url{https://www.semanticscholar.org/paper/3445b7640867fe0accc067db5abcb36bbd4adfff}.
 
-\bibitem[Lueker(2003)]{lueker2009}
+\bibitem[Lueker(2009)]{lueker2009}
 G.~S. Lueker.
 \newblock Improved bounds on the average length of longest common subsequences.
-\newblock \emph{JACM}, 2003.
+\newblock \emph{JACM}, 2009.
 \newblock \doi{10.1145/1516512.1516519}.
 \newblock URL
   \url{https://www.semanticscholar.org/paper/f6caeaa9344a2574bbe7bf0819466d682fad8c50}.

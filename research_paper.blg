@@ -4,46 +4,45 @@ The top-level auxiliary file: research_paper.aux
 The style file: plainnat.bst
 Database file #1: sources.bib
 Warning--empty journal in bilardi2022
-Warning--empty journal in dancik1994
 You've used 16 entries,
             2773 wiz_defined-function locations,
-            700 strings with 8441 characters,
-and the built_in function-call counts, 6606 in all, are:
-= -- 627
-> -- 313
-< -- 14
-+ -- 109
-- -- 93
-* -- 481
-:= -- 1055
-add.period$ -- 72
+            702 strings with 8446 characters,
+and the built_in function-call counts, 6599 in all, are:
+= -- 624
+> -- 322
+< -- 13
++ -- 112
+- -- 96
+* -- 492
+:= -- 1063
+add.period$ -- 73
 call.type$ -- 16
 change.case$ -- 79
 chr.to.int$ -- 16
-cite$ -- 34
-duplicate$ -- 325
-empty$ -- 549
-format.name$ -- 121
-if$ -- 1379
+cite$ -- 33
+duplicate$ -- 322
+empty$ -- 544
+format.name$ -- 122
+if$ -- 1371
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 16
-newline$ -- 112
+missing$ -- 15
+newline$ -- 113
 num.names$ -- 64
-pop$ -- 141
+pop$ -- 140
 preamble$ -- 1
-purify$ -- 63
+purify$ -- 64
 quote$ -- 0
-skip$ -- 248
+skip$ -- 241
 stack$ -- 0
-substring$ -- 164
-swap$ -- 24
+substring$ -- 148
+swap$ -- 22
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 176
-warning$ -- 2
+warning$ -- 1
 while$ -- 59
 width$ -- 0
-write$ -- 250
-(There were 2 warnings)
+write$ -- 254
+(There was 1 warning)

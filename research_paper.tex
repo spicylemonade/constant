@@ -355,7 +355,7 @@ of approximately $10^5$ operations.
 
 We execute $M = 1{,}000{,}000$ independent trials, each on a fresh pair of
 uniformly random binary strings of length $N = 1000$. The implementation uses
-Numba JIT compilation \citep{jerrum1996} with \texttt{prange} for embarrassingly
+Numba JIT compilation \citep{lam2015} with \texttt{prange} for embarrassingly
 parallel execution across CPU cores. Each thread maintains an independent
 pseudorandom number generator state (xoshiro256**), ensuring statistical
 independence across trials.
@@ -583,7 +583,7 @@ a smooth improvement landscape with diminishing returns in both dimensions.
 \Cref{fig:convergence} shows how the provable lower bound improves as the
 number of trials $M$ increases. The Hoeffding margin shrinks as
 $O(1/\sqrt{M})$, and the provable bound first exceeds the previous best of
-$0.792666$ \citep{heineman2024} at approximately $M \approx 200{,}000$ trials.
+$0.792666$ \citep{heineman2024} at approximately $M \approx 127{,}000$ trials.
 
 \begin{figure}[t]
   \centering
