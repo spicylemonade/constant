@@ -1,0 +1,140 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alexander(1994)]{alexander1994}
+Kenneth~S. Alexander.
+\newblock The rate of convergence of the mean length of the longest common
+  subsequence.
+\newblock \emph{The Annals of Applied Probability}, 4\penalty0 (4):\penalty0
+  1074--1082, 1994.
+\newblock \doi{10.1214/aoap/1177004903}.
+
+\bibitem[Bilardi and Schimd(2022)]{bilardi2022}
+G.~Bilardi and Michele Schimd.
+\newblock Computable bounds and monte carlo estimates of the expected edit
+  distance.
+\newblock 2022.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/fbfe2cc604c6d836646d224b332082ccfe747577}.
+
+\bibitem[Chvátal and Sankoff(1975)]{chvtal1975}
+Václav Chvátal and D.~Sankoff.
+\newblock Longest common subsequences of two random sequences.
+\newblock \emph{Journal of Applied Probability}, 1975.
+\newblock \doi{10.2307/3212444}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/4d362fb52bcd99cf8ec64684a742d3afe09fa3b8}.
+
+\bibitem[Dancík(1994)]{dancik1994}
+V.~Dancík.
+\newblock Expected length of longest common subsequences.
+\newblock 1994.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/0e6c2c4137370c2cc60656fd355be734051bb70f}.
+
+\bibitem[Dancík and Paterson(1994)]{dancik1995}
+V.~Dancík and M.~Paterson.
+\newblock Upper bounds for the expected length of a longest common subsequence
+  of two binary sequences.
+\newblock \emph{Random Struct. Algorithms}, 1994.
+\newblock \doi{10.1002/rsa.3240060408}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/65bddcac2f0872419eac5ff494886ba070622740}.
+
+\bibitem[Hauser et~al.(2006)Hauser, Martínez, and Matzinger]{hauser2006}
+Raphael~Andreas Hauser, S.~Martínez, and H.~Matzinger.
+\newblock Large deviations-based upper bounds on the expected relative length
+  of longest common subsequences.
+\newblock \emph{Advances in Applied Probability}, 2006.
+\newblock \doi{10.1239/aap/1158685004}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/919980b60989bdd0d9e1710e0d1345ac69ab990e}.
+
+\bibitem[Heineman et~al.(2024)Heineman, Miller, Reichman, Salls, Sárközy, and
+  Soiffer]{heineman2024}
+G.~Heineman, Chase Miller, Daniel Reichman, Andrew Salls, Gábor Sárközy, and
+  Duncan Soiffer.
+\newblock Improved lower bounds on the expected length of longest common
+  subsequences.
+\newblock \emph{International Symposium on Information Theory}, 2024.
+\newblock \doi{10.1109/ISIT63088.2025.11195592}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/201ca695565e5f7ba2e7ce025525816369a27b7b}.
+
+\bibitem[Hoeffding(1963)]{hoeffding1963}
+Wassily Hoeffding.
+\newblock Probability inequalities for sums of bounded random variables.
+\newblock \emph{Journal of the American Statistical Association}, 58\penalty0
+  (301):\penalty0 13--30, 1963.
+\newblock \doi{10.1080/01621459.1963.10500830}.
+
+\bibitem[Huber and Raidl(2021)]{huber2021}
+M.~Huber and G.~R. Raidl.
+\newblock Learning beam search: Utilizing machine learning to guide beam search
+  for solving combinatorial optimization problems.
+\newblock In \emph{International Conference on Machine Learning, Optimization,
+  and Data Science}, 2021.
+\newblock \doi{10.1007/978-3-030-95470-3_22}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/18d5de0751a11e1f1f335086eef7a5dfe20df4b1}.
+
+\bibitem[Jerrum and Sinclair(1996)]{jerrum1996}
+Mark Jerrum and Alistair Sinclair.
+\newblock The {Markov} chain {Monte Carlo} method: An approach to approximate
+  counting and integration.
+\newblock \emph{Approximation Algorithms for NP-hard Problems}, pages 482--520,
+  1996.
+
+\bibitem[Kingman(1968)]{kingman1968}
+J.~F.~C. Kingman.
+\newblock The ergodic theory of subadditive stochastic processes.
+\newblock \emph{Journal of the Royal Statistical Society: Series B
+  (Methodological)}, 30\penalty0 (3):\penalty0 499--510, 1968.
+\newblock \doi{10.1111/j.2517-6161.1968.tb00749.x}.
+
+\bibitem[Kiwi and Soto(2008)]{kiwi2008}
+Marcos~A. Kiwi and J.~A. Soto.
+\newblock On a speculated relation between chvátal–sankoff constants of
+  several sequences.
+\newblock \emph{Combinatorics, probability & computing}, 2008.
+\newblock \doi{10.1017/S0963548309009900}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/aabf43442d45cc9433b9e747d3ba0e5500f9fe7c}.
+
+\bibitem[Li et~al.(2025)Li, Ren, and Wen]{li2025}
+Ray Li, William Ren, and Yiran Wen.
+\newblock Expected length of the longest common subsequence of multiple
+  strings.
+\newblock \emph{arXiv.org}, 2025.
+\newblock \doi{10.48550/arXiv.2504.10425}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/3445b7640867fe0accc067db5abcb36bbd4adfff}.
+
+\bibitem[Lueker(2003)]{lueker2009}
+G.~S. Lueker.
+\newblock Improved bounds on the average length of longest common subsequences.
+\newblock \emph{JACM}, 2003.
+\newblock \doi{10.1145/1516512.1516519}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/f6caeaa9344a2574bbe7bf0819466d682fad8c50}.
+
+\bibitem[Rosenfeld(2024)]{rosenfeld2024}
+Matthieu Rosenfeld.
+\newblock Upper bounds on the average edit distance between two random strings.
+\newblock \emph{arXiv.org}, 2024.
+\newblock \doi{10.48550/arXiv.2407.18113}.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/aad58156ed500d47412a8a244cbe637563c65457}.
+
+\bibitem[Steele(1986)]{steele1986}
+J.~Michael Steele.
+\newblock An {Efron-Stein} inequality for nonsymmetric statistics.
+\newblock \emph{The Annals of Statistics}, 14\penalty0 (2):\penalty0 753--758,
+  1986.
+\newblock \doi{10.1214/aos/1176349952}.
+
+\end{thebibliography}
