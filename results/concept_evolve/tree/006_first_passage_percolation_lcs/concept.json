@@ -1,0 +1,17 @@
+{
+  "symbolic_name": "first_passage_percolation_lcs",
+  "description": "Formulates the LCS grid evaluation as a first-passage percolation problem on a directed grid graph. Edge weights are derived from match/mismatch indicators, translating the problem into finding the fastest path.",
+  "domains": [
+    "Percolation Theory",
+    "Graph Theory",
+    "Statistical Physics"
+  ],
+  "mathematical_formalization": "\\lambda = \\lim_{n\\to\\infty} \\frac{1}{n} \\mathbb{E}[\\text{dist}((0,0), (n,n))]",
+  "analogical_connections": "Water seeping through a porous rock, where character matches act as highly permeable channels that accelerate the flow.",
+  "implementation_hypothesis": "Simulate percolation growth clusters on an NxN grid. Track the bounding box of the wetted region to estimate the asymptotic shape theorem constant.",
+  "experiment_seed": "Implement the Eden growth model mapped to the LCS grid and measure the aspect ratio of the resulting cluster.",
+  "folder_plan": [
+    "src/percolation_sim.py",
+    "src/cluster_metrics.py"
+  ]
+}

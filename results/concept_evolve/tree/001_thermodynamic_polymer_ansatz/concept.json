@@ -1,0 +1,18 @@
+{
+  "symbolic_name": "thermodynamic_polymer_ansatz",
+  "description": "Formulates the Chv\u00e1tal-Sankoff constant as the zero-temperature limit of a partition function for a directed polymer in a random medium. Match states act as attractive potentials in a 2D grid, mapping sequence alignment to energy minimization.",
+  "domains": [
+    "Statistical Mechanics",
+    "Combinatorial Optimization",
+    "Polymer Physics"
+  ],
+  "mathematical_formalization": "\\lim_{T \\to 0} -T \\log Z_n = -E_{GS} \\propto \\lambda_{n,2}",
+  "analogical_connections": "Aligning two binary strings is akin to a polymer folding in a lattice to maximize contact with a specific type of impurity.",
+  "implementation_hypothesis": "Simulate the finite-temperature partition function of the directed polymer and anneal T to 0. Use replica tricks to compute the average free energy.",
+  "experiment_seed": "Write a Metropolis-Hastings sampler for polymer paths in a binary grid and extrapolate the energy scaling as N grows.",
+  "folder_plan": [
+    "src/metropolis.py",
+    "src/annealing.py",
+    "data/energy_scaling.csv"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "symbolic_name": "martingale_concentration_bounds",
+  "description": "Constructs a Doob martingale over the sequence reveals. The increments depend on how one letter changes the expected LCS, allowing Azuma-Hoeffding to tightly bound the variance and mean.",
+  "domains": [
+    "Probability Theory",
+    "Martingale Theory",
+    "Concentration Inequalities"
+  ],
+  "mathematical_formalization": "\\mathbb{P}(|LCS - \\mathbb{E}[LCS]| \\ge t) \\le 2\\exp(-t^2 / 2n)",
+  "analogical_connections": "Updating your estimate of the final score in a game as each play occurs, with strict thermodynamic limits on how much one single play can change the expectation.",
+  "implementation_hypothesis": "Compute the exact martingale differences for small n using dynamic programming, and use their empirical variance to tighten the McDiarmid inequality bound.",
+  "experiment_seed": "Compute the conditional expectations E[LCS | x_1...x_k, y_1...y_k] exhaustively for n=15 to analyze the variance profile.",
+  "folder_plan": [
+    "src/doob_martingale.py",
+    "src/variance_profile.py"
+  ]
+}

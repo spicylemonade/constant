@@ -1,0 +1,13 @@
+{
+  "symbolic_name": "thermodynamic_lcs_relaxation",
+  "description": "Treats the discrete LCS matrix as a discretized PDE. Derives a macroscopic differential equation for the 'average speed' of optimal alignments using calculus of variations.",
+  "domains": [
+    "Thermodynamics",
+    "Calculus of Variations"
+  ],
+  "mathematical_formalization": "\\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\vec{v}) = 0, \\gamma_2 = \\int_0^1 v(x) dx",
+  "analogical_connections": "Similar to how geometric optics approximates Maxwell's equations; continuous ray-tracing approximates discrete dynamic programming paths.",
+  "implementation_hypothesis": "Formulate a continuous control problem whose objective is bounded by Vachkovskaia's thermodynamic limits, and use finite element methods to establish a strict upper bound.",
+  "experiment_seed": "Solve the Hamilton-Jacobi-Bellman equation corresponding to the fluid limit of the LCS path ensemble.",
+  "folder_plan": "003_thermodynamic_lcs_relaxation"
+}

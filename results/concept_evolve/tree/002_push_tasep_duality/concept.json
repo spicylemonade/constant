@@ -1,0 +1,13 @@
+{
+  "symbolic_name": "push_tasep_duality",
+  "description": "Frames the LCS alignment problem as a variant of the Push Totally Asymmetric Simple Exclusion Process (PushTASEP), mapping the growth rate of the LCS to the steady-state particle current.",
+  "domains": [
+    "Probability Theory",
+    "Interacting Particle Systems"
+  ],
+  "mathematical_formalization": "\\lim_{t \\to \\infty} \\frac{J(t)}{t} = f(\\rho) \\implies \\gamma_2 = \\sup_{\\rho} f(\\rho)",
+  "analogical_connections": "Traffic flow optimization (maximizing throughput) corresponds to maximizing the shared subsequence between random environments.",
+  "implementation_hypothesis": "Identify the exact invariant measure for the frog dynamics model on a finite ring, compute the macroscopic current, and extrapolate as ring size approaches infinity.",
+  "experiment_seed": "Simulate frog dynamics (Bukh & Cox 2022) for small N, track particle current J, and derive its exact generating function.",
+  "folder_plan": "002_push_tasep_duality"
+}

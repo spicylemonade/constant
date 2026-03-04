@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "kpz_automaton_bootstrap",
+      "domain": "Theoretical Computer Science | Statistical Physics"
+    },
+    {
+      "id": "push_tasep_duality",
+      "domain": "Probability Theory | Interacting Particle Systems"
+    },
+    {
+      "id": "thermodynamic_lcs_relaxation",
+      "domain": "Thermodynamics | Calculus of Variations"
+    },
+    {
+      "id": "cavity_method_message_passing",
+      "domain": "Spin Glass Theory | Combinatorial Optimization"
+    },
+    {
+      "id": "subadditive_martingale_tilted",
+      "domain": "Information Theory | Probability Theory"
+    },
+    {
+      "id": "hydrodynamic_limit_shockwaves",
+      "domain": "Fluid Dynamics | Dynamic Programming"
+    },
+    {
+      "id": "spectral_edge_tasep",
+      "domain": "Random Matrix Theory | Asymptotic Analysis"
+    },
+    {
+      "id": "markov_decision_subadditivity",
+      "domain": "Reinforcement Learning | Automata Theory"
+    },
+    {
+      "id": "tensor_network_alignment",
+      "domain": "Quantum Physics | Information Theory"
+    },
+    {
+      "id": "algebraic_ansatz_falsification",
+      "domain": "Algebraic Geometry | Chaotic Dynamical Systems"
+    }
+  ],
+  "edges": [
+    {
+      "source": "kpz_automaton_bootstrap",
+      "target": "spectral_edge_tasep",
+      "relation": "Both exploit KPZ 1/3 scaling exponents."
+    },
+    {
+      "source": "push_tasep_duality",
+      "target": "hydrodynamic_limit_shockwaves",
+      "relation": "Microscopic particles (TASEP) coarse-grain to macroscopic fluid shocks."
+    },
+    {
+      "source": "cavity_method_message_passing",
+      "target": "tensor_network_alignment",
+      "relation": "Both are zero-temperature physics techniques approximating the partition function."
+    },
+    {
+      "source": "thermodynamic_lcs_relaxation",
+      "target": "hydrodynamic_limit_shockwaves",
+      "relation": "Calculus of variations (PDEs) bounds the fluid limit of the DP matrix."
+    },
+    {
+      "source": "markov_decision_subadditivity",
+      "target": "subadditive_martingale_tilted",
+      "relation": "RL policy value function provides the martingale required for tight subadditive bounds."
+    },
+    {
+      "source": "algebraic_ansatz_falsification",
+      "target": "kpz_automaton_bootstrap",
+      "relation": "Falsification of simple algebraic roots implies required reliance on non-linear scaling exponents."
+    }
+  ],
+  "bridge_chains": [
+    "push_tasep_duality -> hydrodynamic_limit_shockwaves -> thermodynamic_lcs_relaxation (Particle to Fluid to PDE Control)",
+    "cavity_method_message_passing -> tensor_network_alignment -> spectral_edge_tasep (Spin Glass to Quantum Entanglement to Random Matrix)"
+  ]
+}

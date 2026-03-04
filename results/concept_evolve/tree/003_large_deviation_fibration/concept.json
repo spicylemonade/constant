@@ -1,0 +1,17 @@
+{
+  "symbolic_name": "large_deviation_fibration",
+  "description": "Applies large deviation theory to bound the probability that two random sequences share a subsequence of length cn. The Chv\u00e1tal-Sankoff constant is identified as the zero-crossing of the associated rate function.",
+  "domains": [
+    "Probability Theory",
+    "Information Theory",
+    "Asymptotic Analysis"
+  ],
+  "mathematical_formalization": "\\mathbb{P}(LCS_n \\ge cn) \\asymp e^{-n I(c)} \\implies \\lambda = \\sup \\{c : I(c) = 0\\}",
+  "analogical_connections": "The expected LCS length marks the phase transition point where an 'unlikely' high-match event becomes the 'typical' macroscopic state.",
+  "implementation_hypothesis": "Numerically estimate the rate function I(c) using importance sampling for finite n, then use root-finding algorithms to pinpoint where I(c) crosses zero.",
+  "experiment_seed": "Simulate the distribution of LCS lengths for n=100 to 1000, fit the tails using extreme value theory, and extrapolate the rate function.",
+  "folder_plan": [
+    "src/importance_sampling.py",
+    "src/rate_function_fit.py"
+  ]
+}

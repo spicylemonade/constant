@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Improved Lower Bounds on the Expected Length of Longest Common Subsequences",
+    "authors": "Heineman et al.",
+    "year": 2024,
+    "url": "https://arxiv.org/abs/2407.10925",
+    "insight": "Current best computer-assisted lower bound of 0.792665992."
+  },
+  {
+    "title": "The Chv\u00e1tal-Sankoff problem: Understanding random string comparison through stochastic processes",
+    "authors": "Alexander Tiskin",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/2212.01582",
+    "insight": "Maps LCS to statistical mechanics / particle process. Retracted algebraic exactness."
+  },
+  {
+    "title": "Periodic words, common subsequences and frogs",
+    "authors": "Boris Bukh, Christopher Cox",
+    "year": 2022,
+    "url": "https://projecteuclid.org/journals/annals-of-applied-probability/volume-32/issue-2",
+    "insight": "Frog dynamics and PushTASEP variants."
+  }
+]

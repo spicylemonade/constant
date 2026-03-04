@@ -1,0 +1,13 @@
+{
+  "symbolic_name": "cavity_method_message_passing",
+  "description": "Adapts the replica symmetry cavity method from spin glass theory to formulate a local message-passing algorithm that computes marginal probabilities of character alignments.",
+  "domains": [
+    "Spin Glass Theory",
+    "Combinatorial Optimization"
+  ],
+  "mathematical_formalization": "Z(T) = \\sum_{\\text{alignments}} \\exp(L/T), F = -T \\ln Z, \\gamma = \\lim_{T \\to 0} F/n",
+  "analogical_connections": "LCS is analogous to the ground state energy of a disordered 2D lattice. Message passing computes the free energy.",
+  "implementation_hypothesis": "Implement Belief Propagation on the bipartite alignment graph of two random sequences. Use the Density Evolution framework to track message distributions and compute the expected asymptotic free energy.",
+  "experiment_seed": "Run Belief Propagation on random pairs of strings of length N=1000. Compare the zero-temperature limit of free energy with known lower bounds.",
+  "folder_plan": "004_cavity_method_message_passing"
+}

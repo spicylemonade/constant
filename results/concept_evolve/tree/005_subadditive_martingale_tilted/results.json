@@ -1,0 +1,10 @@
+{
+  "N": 1000,
+  "W": 100,
+  "M": 1000000,
+  "empirical_mean": 803.398503,
+  "empirical_ratio": 0.803398503,
+  "hoeffding_margin": 0.0037169221888498387,
+  "provable_lower_bound": 0.7996815808111502,
+  "time_s": 694.0469224452972
+}

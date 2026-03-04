@@ -1,0 +1,20 @@
+[
+  {
+    "direction": "RL-Guided Automaton Search",
+    "rationale": "Automata methods like Dan\u010d\u00edk/Heineman rely on manually designed 'feasible triplets' or bounds. Deep RL can autonomously discover novel, tighter local bounding automata.",
+    "first_step": "Define the state of an RL agent as a finite context window of the DP matrix, action as sequence emission, reward as LCS length. Train PPO.",
+    "expected_signal": "The RL agent's average reward per step strictly exceeds 0.792665992, providing a constructible heuristic for a new formal lower bound."
+  },
+  {
+    "direction": "Tensor Network Ground State Bounds",
+    "rationale": "LCS bounds can be rewritten as the zero-temperature free energy of a 2D statistical mechanics model. Tensor networks (DMRG) provide rigorous variational bounds on ground state energies.",
+    "first_step": "Formulate the binary alphabet LCS as a local vertex model. Write a script to compute the exact transfer matrix for width N=10.",
+    "expected_signal": "DMRG convergence to a leading eigenvalue whose log strictly bounds \\gamma_2 from below, surpassing Lueker's bounds."
+  },
+  {
+    "direction": "Fredholm Determinant Extraction",
+    "rationale": "If the LCS maps precisely to the KPZ/TASEP class, exact formulas involving Fredholm determinants might yield the exact constant without simulating.",
+    "first_step": "Investigate the exact map between Bukh & Cox's 'frog dynamics' (PushTASEP variant) and existing exact determinantal point process solutions.",
+    "expected_signal": "An integral equation whose solution analytically matches or refines the 0.7926... / 0.8262... gap."
+  }
+]

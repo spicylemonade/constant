@@ -1,0 +1,17 @@
+{
+  "symbolic_name": "bethe_ansatz_alignment",
+  "description": "Employs the Bethe Ansatz from quantum integrable systems, specifically mapping the sequence alignment to the 5-vertex model. Offers a path to exact analytical solutions or highly refined asymptotic expansions.",
+  "domains": [
+    "Quantum Integrable Systems",
+    "Bioinformatics",
+    "Mathematical Physics"
+  ],
+  "mathematical_formalization": "Z = \\text{Tr}(T^N) \\implies \\text{eigenstates via Bethe equations}",
+  "analogical_connections": "Aligning two strings is mathematically isomorphic to finding the quantum eigenstates of a 1D spin chain with specific neighbor interactions.",
+  "implementation_hypothesis": "Numerically solve the Bethe ansatz equations for small N to find the exact finite-size scaling corrections, yielding tighter extrapolation.",
+  "experiment_seed": "Write a solver for the non-linear Bethe equations for the 5-vertex model and compare the ground state energy to explicit LCS computations.",
+  "folder_plan": [
+    "src/bethe_solver.py",
+    "src/vertex_model.py"
+  ]
+}

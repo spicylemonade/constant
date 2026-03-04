@@ -1,0 +1,13 @@
+{
+  "symbolic_name": "markov_decision_subadditivity",
+  "description": "Formulates the step-by-step pairing of characters as a Markov Decision Process (MDP) and uses Reinforcement Learning to discover near-optimal local alignment policies that establish rigorous expected lower bounds.",
+  "domains": [
+    "Reinforcement Learning",
+    "Automata Theory"
+  ],
+  "mathematical_formalization": "V^*(s) = \\max_a \\left( R(s,a) + \\gamma \\sum_{s'} P(s'|s,a) V^*(s') \\right)",
+  "analogical_connections": "Just as AlphaGo finds lower bounds on the win-rate of board positions through self-play, an RL agent finds lower bounds on the LCS growth rate.",
+  "implementation_hypothesis": "Train a Deep Q-Network on a finite lookahead window of the two random strings. Prove the policy is stationary and its average reward per step strictly lower-bounds \\gamma_2.",
+  "experiment_seed": "Train PPO with a lookahead of 15 characters to choose DP moves. Evaluate expected reward per step.",
+  "folder_plan": "008_markov_decision_subadditivity"
+}

@@ -1,0 +1,27 @@
+[
+  [
+    "algebraic_ansatz_falsification",
+    "kpz_automaton_bootstrap",
+    "spectral_edge_tasep"
+  ],
+  [
+    "cavity_method_message_passing",
+    "tensor_network_alignment"
+  ],
+  [
+    "kpz_automaton_bootstrap",
+    "spectral_edge_tasep"
+  ],
+  [
+    "markov_decision_subadditivity",
+    "subadditive_martingale_tilted"
+  ],
+  [
+    "push_tasep_duality",
+    "hydrodynamic_limit_shockwaves"
+  ],
+  [
+    "thermodynamic_lcs_relaxation",
+    "hydrodynamic_limit_shockwaves"
+  ]
+]

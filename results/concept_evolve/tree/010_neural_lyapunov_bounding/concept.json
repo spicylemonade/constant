@@ -1,0 +1,18 @@
+{
+  "symbolic_name": "neural_lyapunov_bounding",
+  "description": "Parameterizes bounding functions (like Lyapunov functions for Markov chains or rate functions for large deviations) using deep neural networks, optimizing the bound via gradient descent.",
+  "domains": [
+    "Deep Learning",
+    "Optimization",
+    "Control Theory"
+  ],
+  "mathematical_formalization": "\\lambda \\le \\min_{\\theta} \\mathcal{L}(f_\\theta(x))",
+  "analogical_connections": "Using a neural net as a flexible, multi-dimensional clay mold to tightly fit the complex, jagged shape of the true analytical bounding function.",
+  "implementation_hypothesis": "Train an MLP to satisfy the supermartingale condition for the LCS growth process. The expected value of the network provides an upper bound.",
+  "experiment_seed": "Build a loss function that penalizes violations of the Lyapunov drift condition and train on sampled sequence extensions.",
+  "folder_plan": [
+    "src/lyapunov_net.py",
+    "src/train_bound.py",
+    "models/lyapunov_weights.pt"
+  ]
+}

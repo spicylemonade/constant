@@ -1,0 +1,15 @@
+{
+  "associations": [
+    "longest common subsequence -> hidden markov models -> sequence alignment -> bioinformatics -> entropy rate -> directed polymers -> random medium -> spin glass -> replica trick",
+    "Chvatal-Sankoff -> kingman subadditive -> percolation -> first passage percolation -> metric shape -> Tracy-Widom -> KPZ"
+  ],
+  "blind_spots": [
+    "Assuming the constant \\gamma_2 can be found in closed form; it may be irreducible or transcendental.",
+    "Relying too heavily on asymptotic scaling (KPZ) without rigorous non-asymptotic error bounds for small n.",
+    "Ignoring that the combinatorial state space grows exponentially, making exact finite calculations hit a hard computational wall at n~30 (unless using deep branch and bound like Heineman et al.)."
+  ],
+  "anomaly_results": [
+    "Tiskin's initial claim of an exact algebraic form was retracted (v2 of arxiv:2212.01582), implying infinite-state transitions likely inject chaotic/transcendental parameters.",
+    "Finite size scaling \\gamma_n = \\gamma_2 + O(n^{-c}) exhibits a very strong finite-size effect, rendering naive Monte Carlo simulations virtually useless for bounds tighter than 0.01."
+  ]
+}

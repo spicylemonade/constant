@@ -1,0 +1,17 @@
+{
+  "symbolic_name": "information_bottleneck_compression",
+  "description": "Bounds the LCS by considering the mutual algorithmic information and Kolmogorov complexity limits of the two sequences. An excessively long LCS implies the sequences can be compressed beyond their inherent entropy.",
+  "domains": [
+    "Algorithmic Information Theory",
+    "Data Compression",
+    "Cryptography"
+  ],
+  "mathematical_formalization": "K(x,y) \\le K(x) + K(y|x) - I_K(x;y)",
+  "analogical_connections": "The longest common subsequence acts as a shared dictionary for a zip compressor; thermodynamics of computation dictates it cannot be arbitrarily large.",
+  "implementation_hypothesis": "Use normalized compression distance (NCD) estimators as a proxy for shared algorithmic information to construct an empirical upper bound.",
+  "experiment_seed": "Compress pairs of random sequences with various standard compressors (LZMA, gzip) and analyze the correlation between compression ratio and LCS.",
+  "folder_plan": [
+    "src/compressors.py",
+    "src/ncd_analysis.py"
+  ]
+}

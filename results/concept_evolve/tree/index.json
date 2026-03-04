@@ -1,0 +1,92 @@
+[
+  {
+    "id": "kpz_automaton_bootstrap",
+    "slug": "kpz-automaton-bootstrap",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/001_kpz-automaton-bootstrap",
+    "domains": [
+      "Theoretical Computer Science",
+      "Statistical Physics"
+    ]
+  },
+  {
+    "id": "push_tasep_duality",
+    "slug": "push-tasep-duality",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/002_push-tasep-duality",
+    "domains": [
+      "Probability Theory",
+      "Interacting Particle Systems"
+    ]
+  },
+  {
+    "id": "thermodynamic_lcs_relaxation",
+    "slug": "thermodynamic-lcs-relaxation",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/003_thermodynamic-lcs-relaxation",
+    "domains": [
+      "Thermodynamics",
+      "Calculus of Variations"
+    ]
+  },
+  {
+    "id": "cavity_method_message_passing",
+    "slug": "cavity-method-message-passing",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/004_cavity-method-message-passing",
+    "domains": [
+      "Spin Glass Theory",
+      "Combinatorial Optimization"
+    ]
+  },
+  {
+    "id": "subadditive_martingale_tilted",
+    "slug": "subadditive-martingale-tilted",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/005_subadditive-martingale-tilted",
+    "domains": [
+      "Information Theory",
+      "Probability Theory"
+    ]
+  },
+  {
+    "id": "hydrodynamic_limit_shockwaves",
+    "slug": "hydrodynamic-limit-shockwaves",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/006_hydrodynamic-limit-shockwaves",
+    "domains": [
+      "Fluid Dynamics",
+      "Dynamic Programming"
+    ]
+  },
+  {
+    "id": "spectral_edge_tasep",
+    "slug": "spectral-edge-tasep",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/007_spectral-edge-tasep",
+    "domains": [
+      "Random Matrix Theory",
+      "Asymptotic Analysis"
+    ]
+  },
+  {
+    "id": "markov_decision_subadditivity",
+    "slug": "markov-decision-subadditivity",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/008_markov-decision-subadditivity",
+    "domains": [
+      "Reinforcement Learning",
+      "Automata Theory"
+    ]
+  },
+  {
+    "id": "tensor_network_alignment",
+    "slug": "tensor-network-alignment",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/009_tensor-network-alignment",
+    "domains": [
+      "Quantum Physics",
+      "Information Theory"
+    ]
+  },
+  {
+    "id": "algebraic_ansatz_falsification",
+    "slug": "algebraic-ansatz-falsification",
+    "folder": "/home/archivara/work/repo/results/concept_evolve/tree/010_algebraic-ansatz-falsification",
+    "domains": [
+      "Algebraic Geometry",
+      "Chaotic Dynamical Systems"
+    ]
+  }
+]

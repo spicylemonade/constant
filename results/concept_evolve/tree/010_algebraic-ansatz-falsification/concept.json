@@ -1,0 +1,15 @@
+{
+  "symbolic_name": "algebraic_ansatz_falsification",
+  "description": "Examines the hypothesis that \\gamma_2 is an exact algebraic number root of a polynomial system (as originally posited then retracted by Tiskin), mapping the failures of exact solvability to chaotic dynamics.",
+  "domains": [
+    "Algebraic Geometry",
+    "Chaotic Dynamical Systems"
+  ],
+  "mathematical_formalization": "P(\\gamma_2) = 0 \\text{ for } P \\in \\mathbb{Z}[x] \\text{ vs } \\lambda \\text{ is transcendental}",
+  "analogical_connections": "Similar to how the three-body problem fails to have a closed-form algebraic integral of motion, the infinite-state automaton of LCS may resist exact algebraic closure.",
+  "implementation_hypothesis": "Formulate a finite algebraic relaxation using Lasserre (Sum of Squares) hierarchy. Track the degree at which the algebraic closure fails to accurately represent the infinite limit.",
+  "experiment_seed": "Construct the transition polynomials for k-state approximations. Check Gr\u00f6bner bases for exact rational/algebraic roots.",
+  "folder_plan": "010_algebraic_ansatz_falsification",
+  "generated_at": "2026-03-04T18:40:55.980700+00:00",
+  "project_folder": "concept_evolve/tree/010_algebraic-ansatz-falsification"
+}

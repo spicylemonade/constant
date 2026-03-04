@@ -1,0 +1,17 @@
+{
+  "symbolic_name": "spectral_markov_embedding",
+  "description": "Embeds the process of revealing characters and finding matches into a large, structured Markov chain. The asymptotic growth rate (upper bound) is then tightly constrained by the spectral radius of the transition matrix.",
+  "domains": [
+    "Spectral Graph Theory",
+    "Stochastic Processes",
+    "Algebraic Combinatorics"
+  ],
+  "mathematical_formalization": "\\lambda_{CS} \\le \\log \\rho(M)",
+  "analogical_connections": "The maximal average alignment rate is analogous to the dominant resonance frequency (largest eigenvalue) of the sequence-generating dynamic system.",
+  "implementation_hypothesis": "Construct a symbolic transition matrix for a k-lookahead matching process. Compute the dominant eigenvalue using power iteration and optimize over k.",
+  "experiment_seed": "Build transition matrices for k=1 to 5 and plot the sequence of spectral bounds.",
+  "folder_plan": [
+    "src/matrix_builder.py",
+    "src/eigensolver.py"
+  ]
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "symbolic_name": "kpz_automaton_bootstrap",
+    "description": "Combines the exact finite-state automata calculations of Dan\u010d\u00edk and Paterson with the theoretical scaling laws of the Kardar-Parisi-Zhang (KPZ) universality class to extrapolate infinite-limit bounds.",
+    "domains": [
+      "Theoretical Computer Science",
+      "Statistical Physics"
+    ],
+    "mathematical_formalization": "\\mathbb{E}[L_n]/n = \\gamma_2 + A n^{-2/3}",
+    "analogical_connections": "Like using thermodynamic equations of state to predict the asymptotic limit of a microscopic fluid simulation.",
+    "implementation_hypothesis": "Extend the Feasible Triplet method to sequence lengths n up to 10^5, fit the KPZ finite-size scaling exponent \\beta=1/3 to the empirical data, and infer the offset \\gamma_2 with rigorous error bounds.",
+    "experiment_seed": "Simulate LCS for length n=1000..50000. Regress E[L_n] = \\gamma_2 n + A n^{1/3} + B. Extract \\gamma_2 and test tightness.",
+    "folder_plan": "001_kpz_automaton_bootstrap"
+  },
+  {
+    "symbolic_name": "push_tasep_duality",
+    "description": "Frames the LCS alignment problem as a variant of the Push Totally Asymmetric Simple Exclusion Process (PushTASEP), mapping the growth rate of the LCS to the steady-state particle current.",
+    "domains": [
+      "Probability Theory",
+      "Interacting Particle Systems"
+    ],
+    "mathematical_formalization": "\\lim_{t \\to \\infty} \\frac{J(t)}{t} = f(\\rho) \\implies \\gamma_2 = \\sup_{\\rho} f(\\rho)",
+    "analogical_connections": "Traffic flow optimization (maximizing throughput) corresponds to maximizing the shared subsequence between random environments.",
+    "implementation_hypothesis": "Identify the exact invariant measure for the frog dynamics model on a finite ring, compute the macroscopic current, and extrapolate as ring size approaches infinity.",
+    "experiment_seed": "Simulate frog dynamics (Bukh & Cox 2022) for small N, track particle current J, and derive its exact generating function.",
+    "folder_plan": "002_push_tasep_duality"
+  },
+  {
+    "symbolic_name": "thermodynamic_lcs_relaxation",
+    "description": "Treats the discrete LCS matrix as a discretized PDE. Derives a macroscopic differential equation for the 'average speed' of optimal alignments using calculus of variations.",
+    "domains": [
+      "Thermodynamics",
+      "Calculus of Variations"
+    ],
+    "mathematical_formalization": "\\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\vec{v}) = 0, \\gamma_2 = \\int_0^1 v(x) dx",
+    "analogical_connections": "Similar to how geometric optics approximates Maxwell's equations; continuous ray-tracing approximates discrete dynamic programming paths.",
+    "implementation_hypothesis": "Formulate a continuous control problem whose objective is bounded by Vachkovskaia's thermodynamic limits, and use finite element methods to establish a strict upper bound.",
+    "experiment_seed": "Solve the Hamilton-Jacobi-Bellman equation corresponding to the fluid limit of the LCS path ensemble.",
+    "folder_plan": "003_thermodynamic_lcs_relaxation"
+  },
+  {
+    "symbolic_name": "cavity_method_message_passing",
+    "description": "Adapts the replica symmetry cavity method from spin glass theory to formulate a local message-passing algorithm that computes marginal probabilities of character alignments.",
+    "domains": [
+      "Spin Glass Theory",
+      "Combinatorial Optimization"
+    ],
+    "mathematical_formalization": "Z(T) = \\sum_{\\text{alignments}} \\exp(L/T), F = -T \\ln Z, \\gamma = \\lim_{T \\to 0} F/n",
+    "analogical_connections": "LCS is analogous to the ground state energy of a disordered 2D lattice. Message passing computes the free energy.",
+    "implementation_hypothesis": "Implement Belief Propagation on the bipartite alignment graph of two random sequences. Use the Density Evolution framework to track message distributions and compute the expected asymptotic free energy.",
+    "experiment_seed": "Run Belief Propagation on random pairs of strings of length N=1000. Compare the zero-temperature limit of free energy with known lower bounds.",
+    "folder_plan": "004_cavity_method_message_passing"
+  },
+  {
+    "symbolic_name": "subadditive_martingale_tilted",
+    "description": "Combines Kingman's subadditive ergodic theorem with exponential tilting (large deviation theory) to drastically sharpen the concentration inequalities used in branch-and-bound lower bounds.",
+    "domains": [
+      "Information Theory",
+      "Probability Theory"
+    ],
+    "mathematical_formalization": "\\mathbb{P}(L_n - \\mathbb{E}[L_n] \\ge t) \\le \\exp(-t^2 / 2n \\sigma^2)",
+    "analogical_connections": "Like using importance sampling to find rare events in financial risk modeling, tilted martingales zoom in on the 'typical' high-yield alignments.",
+    "implementation_hypothesis": "Modify Lueker's branch-and-bound exploration using a tilted probability measure that favors sequences with higher local LCS growth, re-weighting to establish a rigorous lower bound.",
+    "experiment_seed": "Compute the moment generating function of finite blocks L_k (k=10) and apply Cram\u00e9r's theorem to bound the tail of L_n.",
+    "folder_plan": "005_subadditive_martingale_tilted"
+  },
+  {
+    "symbolic_name": "hydrodynamic_limit_shockwaves",
+    "description": "Models the DP matrix anti-diagonals as a fluid density profile undergoing Burgers' equation. The LCS constant is bounded by the speed of the macroscopic shockwave.",
+    "domains": [
+      "Fluid Dynamics",
+      "Dynamic Programming"
+    ],
+    "mathematical_formalization": "\\partial_t u + u \\partial_x u = \\nu \\partial_{xx} u, \\text{ speed } s = \\frac{u_L + u_R}{2}",
+    "analogical_connections": "The 'front' of completed LCS computations propagates through the DP grid like a shockwave through a viscous fluid.",
+    "implementation_hypothesis": "Map the DP grid transitions to microscopic collision rules, derive the macroscopic Riemann problem, and extract the wave speed.",
+    "experiment_seed": "Track the expected maximum value along anti-diagonals k=1..2n. Measure the linear propagation speed.",
+    "folder_plan": "006_hydrodynamic_limit_shockwaves"
+  },
+  {
+    "symbolic_name": "spectral_edge_tasep",
+    "description": "Relates the fluctuations of the LCS length to the Tracy-Widom distribution and the largest eigenvalue of the GUE random matrix ensemble.",
+    "domains": [
+      "Random Matrix Theory",
+      "Asymptotic Analysis"
+    ],
+    "mathematical_formalization": "\\lim_{n \\to \\infty} \\mathbb{P}\\left(\\frac{L_{n} - \\gamma_2 n}{c n^{1/3}} \\le s\\right) = F_2(s)",
+    "analogical_connections": "The maximum alignment score maps to the ground state energy of a system of non-intersecting fermions.",
+    "implementation_hypothesis": "Use exact Fredholm determinant representations of the TASEP transition probabilities to compute the exact coefficients of the n^{1/3} expansion, tightly constraining \\gamma_2.",
+    "experiment_seed": "Generate 10,000 pairs of n=5000. Fit the empirical distribution of L_n to the Tracy-Widom F_2 distribution and solve for \\gamma_2 and c.",
+    "folder_plan": "007_spectral_edge_tasep"
+  },
+  {
+    "symbolic_name": "markov_decision_subadditivity",
+    "description": "Formulates the step-by-step pairing of characters as a Markov Decision Process (MDP) and uses Reinforcement Learning to discover near-optimal local alignment policies that establish rigorous expected lower bounds.",
+    "domains": [
+      "Reinforcement Learning",
+      "Automata Theory"
+    ],
+    "mathematical_formalization": "V^*(s) = \\max_a \\left( R(s,a) + \\gamma \\sum_{s'} P(s'|s,a) V^*(s') \\right)",
+    "analogical_connections": "Just as AlphaGo finds lower bounds on the win-rate of board positions through self-play, an RL agent finds lower bounds on the LCS growth rate.",
+    "implementation_hypothesis": "Train a Deep Q-Network on a finite lookahead window of the two random strings. Prove the policy is stationary and its average reward per step strictly lower-bounds \\gamma_2.",
+    "experiment_seed": "Train PPO with a lookahead of 15 characters to choose DP moves. Evaluate expected reward per step.",
+    "folder_plan": "008_markov_decision_subadditivity"
+  },
+  {
+    "symbolic_name": "tensor_network_alignment",
+    "description": "Represents the dynamic programming alignment matrix as a 2D tensor network, reducing the computation of the expected exponential partition function to Matrix Product State (MPS) compression.",
+    "domains": [
+      "Quantum Physics",
+      "Information Theory"
+    ],
+    "mathematical_formalization": "Z = \\text{tr}(T^n), \\gamma = \\lim_{\\beta \\to \\infty} \\frac{1}{\\beta} \\ln(\\lambda_{\\max}(T_\\beta))",
+    "analogical_connections": "Compressing the ensemble of all possible string alignments is equivalent to finding the low-entanglement ground state of a 1D quantum chain.",
+    "implementation_hypothesis": "Construct the transfer matrix for the finite-temperature LCS problem. Use Density Matrix Renormalization Group (DMRG) to find the leading eigenvalue.",
+    "experiment_seed": "Implement a tensor network with bond dimension \\chi=16. Compute \\lambda_{\\max} for varying temperatures \\beta and extrapolate to \\beta \\to \\infty.",
+    "folder_plan": "009_tensor_network_alignment"
+  },
+  {
+    "symbolic_name": "algebraic_ansatz_falsification",
+    "description": "Examines the hypothesis that \\gamma_2 is an exact algebraic number root of a polynomial system (as originally posited then retracted by Tiskin), mapping the failures of exact solvability to chaotic dynamics.",
+    "domains": [
+      "Algebraic Geometry",
+      "Chaotic Dynamical Systems"
+    ],
+    "mathematical_formalization": "P(\\gamma_2) = 0 \\text{ for } P \\in \\mathbb{Z}[x] \\text{ vs } \\lambda \\text{ is transcendental}",
+    "analogical_connections": "Similar to how the three-body problem fails to have a closed-form algebraic integral of motion, the infinite-state automaton of LCS may resist exact algebraic closure.",
+    "implementation_hypothesis": "Formulate a finite algebraic relaxation using Lasserre (Sum of Squares) hierarchy. Track the degree at which the algebraic closure fails to accurately represent the infinite limit.",
+    "experiment_seed": "Construct the transition polynomials for k-state approximations. Check Gr\u00f6bner bases for exact rational/algebraic roots.",
+    "folder_plan": "010_algebraic_ansatz_falsification"
+  }
+]

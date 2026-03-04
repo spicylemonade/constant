@@ -1,0 +1,16 @@
+[
+  {
+    "method": "Lueker 2009",
+    "type": "upper",
+    "value": 0.82628,
+    "time_seconds": 4.76837158203125e-07,
+    "tightness_to_0.8122": 0.014079999999999981
+  },
+  {
+    "method": "Heineman 2024",
+    "type": "lower",
+    "value": 0.792665992,
+    "time_seconds": 4.76837158203125e-07,
+    "tightness_to_0.8122": 0.019534008000000047
+  }
+]

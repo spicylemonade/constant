@@ -1,0 +1,18 @@
+{
+  "symbolic_name": "reinforcement_automata_search",
+  "description": "Treats the generation of lower-bound-producing finite automata (as used by Dancik and Lueker) as a policy search in a Markov Decision Process. A Reinforcement Learning agent explores the space of state machines to maximize the expected match rate.",
+  "domains": [
+    "Reinforcement Learning",
+    "Automata Theory",
+    "Operations Research"
+  ],
+  "mathematical_formalization": "\\pi^* = \\text{argmax}_{\\pi \\in \\Pi} \\mathbb{E}_{\\pi}[\\sum_{t=0}^\\infty \\gamma^t r_t]",
+  "analogical_connections": "Designing the bounding automaton is like training an agent to navigate a labyrinth of random bits, where matches are rewards.",
+  "implementation_hypothesis": "Use Proximal Policy Optimization (PPO) to train an agent that outputs transition matrices for an N-state automaton, rewarding the steady-state match probability.",
+  "experiment_seed": "Implement a discrete state RL environment where actions correspond to defining transitions of a deterministic finite automaton.",
+  "folder_plan": [
+    "env/automaton_env.py",
+    "agents/ppo_agent.py",
+    "models/best_automaton.pt"
+  ]
+}

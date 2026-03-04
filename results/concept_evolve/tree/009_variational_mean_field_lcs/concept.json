@@ -1,0 +1,17 @@
+{
+  "symbolic_name": "variational_mean_field_lcs",
+  "description": "Applies variational methods to approximate the partition function of the alignment. A simpler, solvable 'mean-field' Hamiltonian is proposed, and its parameters are optimized to minimize the variational free energy.",
+  "domains": [
+    "Statistical Mechanics",
+    "Variational Inference",
+    "Machine Learning"
+  ],
+  "mathematical_formalization": "F \\le F_0 + \\langle H - H_0 \\rangle_0",
+  "analogical_connections": "Replacing a complex network of interacting people (letters) with a single 'average' person that everyone interacts with, simplifying the math.",
+  "implementation_hypothesis": "Define a factorized probability distribution over alignments, and minimize the Kullback-Leibler divergence to the true Boltzmann distribution of alignments.",
+  "experiment_seed": "Implement a Mean-Field approximation algorithm that iteratively updates the marginal probabilities of letter matches.",
+  "folder_plan": [
+    "src/mean_field.py",
+    "src/kl_divergence.py"
+  ]
+}

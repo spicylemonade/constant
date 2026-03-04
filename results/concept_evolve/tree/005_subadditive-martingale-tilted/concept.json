@@ -1,0 +1,15 @@
+{
+  "symbolic_name": "subadditive_martingale_tilted",
+  "description": "Combines Kingman's subadditive ergodic theorem with exponential tilting (large deviation theory) to drastically sharpen the concentration inequalities used in branch-and-bound lower bounds.",
+  "domains": [
+    "Information Theory",
+    "Probability Theory"
+  ],
+  "mathematical_formalization": "\\mathbb{P}(L_n - \\mathbb{E}[L_n] \\ge t) \\le \\exp(-t^2 / 2n \\sigma^2)",
+  "analogical_connections": "Like using importance sampling to find rare events in financial risk modeling, tilted martingales zoom in on the 'typical' high-yield alignments.",
+  "implementation_hypothesis": "Modify Lueker's branch-and-bound exploration using a tilted probability measure that favors sequences with higher local LCS growth, re-weighting to establish a rigorous lower bound.",
+  "experiment_seed": "Compute the moment generating function of finite blocks L_k (k=10) and apply Cram\u00e9r's theorem to bound the tail of L_n.",
+  "folder_plan": "005_subadditive_martingale_tilted",
+  "generated_at": "2026-03-04T18:40:55.978133+00:00",
+  "project_folder": "concept_evolve/tree/005_subadditive-martingale-tilted"
+}
