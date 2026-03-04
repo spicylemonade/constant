@@ -1,3 +1,14 @@
+"""
+Annealed upper bound computation for the Chvátal–Sankoff constant.
+
+Computes an upper bound on γ₂ using the annealed (first-moment) method:
+optimizes over exponential tilting parameter beta to minimize
+log(E[Z(beta)]) / (beta * N). This gives a weaker upper bound than
+Lueker's method but serves as a quick sanity check.
+
+Usage:
+    python test_annealed.py
+"""
 import math
 from scipy.special import comb
 import numpy as np

@@ -13,5 +13,7 @@
   "folder_plan": [
     "src/matrix_builder.py",
     "src/eigensolver.py"
-  ]
+  ],
+  "status": "deferred",
+  "experimental_result": "Spectral embedding explored theoretically; no implementation attempted."
 }

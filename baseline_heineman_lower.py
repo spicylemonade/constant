@@ -1,3 +1,14 @@
+"""
+Heineman et al. 2024 lower bound baseline for the Chvátal–Sankoff constant γ₂.
+
+Returns the known lower bound 0.792665992 from H2024's optimized
+deterministic finite-state machine approach. This is a stub that
+reproduces the literature value; the full automaton evaluation
+requires billions of states and weeks of parallel computation.
+
+Usage:
+    python baseline_heineman_lower.py
+"""
 import sys
 
 def heineman_lower_bound():

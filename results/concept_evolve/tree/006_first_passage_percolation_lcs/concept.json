@@ -13,5 +13,7 @@
   "folder_plan": [
     "src/percolation_sim.py",
     "src/cluster_metrics.py"
-  ]
+  ],
+  "status": "deferred",
+  "experimental_result": "FPP-LCS connection well-documented; no novel bound derived."
 }

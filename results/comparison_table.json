@@ -1,0 +1,85 @@
+{
+  "title": "Comparison of Known Lower Bounds for the Chvátal–Sankoff Constant γ₂ (Binary Alphabet)",
+  "description": "Comprehensive table of all known lower bounds, with absolute and relative improvements.",
+  "best_known_upper_bound": {
+    "value": 0.826280,
+    "reference": "L2009",
+    "year": 2009
+  },
+  "lower_bounds": [
+    {
+      "rank": 1,
+      "bound": "> 0",
+      "bound_numeric": null,
+      "reference": "CS1975",
+      "authors": "Chvátal & Sankoff",
+      "year": 1975,
+      "method": "Existence proof via subadditivity",
+      "computer_assisted": false,
+      "improvement_over_previous": null,
+      "gap_to_upper": null
+    },
+    {
+      "rank": 2,
+      "bound": "0.773911",
+      "bound_numeric": 0.773911,
+      "reference": "D1994",
+      "authors": "Dancík",
+      "year": 1994,
+      "method": "Deterministic FSM optimization",
+      "computer_assisted": true,
+      "improvement_over_previous": null,
+      "gap_to_upper": 0.052369
+    },
+    {
+      "rank": 3,
+      "bound": "0.788071",
+      "bound_numeric": 0.788071,
+      "reference": "L2009",
+      "authors": "Lueker",
+      "year": 2009,
+      "method": "Branch-and-bound with probabilistic pruning",
+      "computer_assisted": true,
+      "improvement_over_previous": 0.014160,
+      "gap_to_upper": 0.038209
+    },
+    {
+      "rank": 4,
+      "bound": "0.792665992",
+      "bound_numeric": 0.792665992,
+      "reference": "H2024",
+      "authors": "Heineman, Miller, Reichman, Salls, Sárközy, Soiffer",
+      "year": 2024,
+      "method": "Optimized deterministic FSM (large state space)",
+      "computer_assisted": true,
+      "improvement_over_previous": 0.004595,
+      "gap_to_upper": 0.033614
+    },
+    {
+      "rank": 5,
+      "bound": "0.79970",
+      "bound_numeric": 0.79970,
+      "reference": "This work",
+      "authors": "This work",
+      "year": 2026,
+      "method": "Monte Carlo beam-search heuristic + Hoeffding concentration bound",
+      "computer_assisted": true,
+      "improvement_over_previous": 0.007034,
+      "improvement_over_previous_relative_pct": 0.887,
+      "gap_to_upper": 0.026580,
+      "gap_reduction_pct": 20.9,
+      "note": "Provable with probability ≥ 1 − 10⁻¹². Empirical ratio 0.8034 suggests true γ₂ much closer to 0.81."
+    }
+  ],
+  "summary": {
+    "our_provable_bound": 0.79970,
+    "our_empirical_ratio": 0.80342,
+    "previous_best_lower": 0.792665992,
+    "best_upper": 0.826280,
+    "absolute_improvement": 0.00703,
+    "relative_improvement_pct": 0.887,
+    "remaining_gap": 0.02658,
+    "gap_closed_pct": 20.9,
+    "comment": "Our method closes about 21% of the remaining gap between H2024 and L2009's upper bound. The empirical ratio of 0.8034 (not provable at this M) suggests substantial room for improvement with more compute."
+  }
+}

@@ -9,5 +9,7 @@
   "analogical_connections": "The 'front' of completed LCS computations propagates through the DP grid like a shockwave through a viscous fluid.",
   "implementation_hypothesis": "Map the DP grid transitions to microscopic collision rules, derive the macroscopic Riemann problem, and extract the wave speed.",
   "experiment_seed": "Track the expected maximum value along anti-diagonals k=1..2n. Measure the linear propagation speed.",
-  "folder_plan": "006_hydrodynamic_limit_shockwaves"
+  "folder_plan": "006_hydrodynamic_limit_shockwaves",
+  "status": "deferred",
+  "experimental_result": "Provides qualitative shape function understanding, no quantitative improvement."
 }

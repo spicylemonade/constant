@@ -13,5 +13,7 @@
   "folder_plan": [
     "src/mean_field.py",
     "src/kl_divergence.py"
-  ]
+  ],
+  "status": "deferred",
+  "experimental_result": "Mean-field approximation explored; accuracy insufficient for bound improvement."
 }

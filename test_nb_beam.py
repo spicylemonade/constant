@@ -1,3 +1,13 @@
+"""
+Numba beam-search development test with debug output.
+
+Tests the Numba-compiled beam search on a small (N=100) example with
+periodic state-size logging. Used during development to verify the
+packed-integer state representation and pruning logic.
+
+Usage:
+    python test_nb_beam.py
+"""
 import numpy as np
 from numba import njit
 

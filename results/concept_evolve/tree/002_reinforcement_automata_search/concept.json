@@ -14,5 +14,7 @@
     "env/automaton_env.py",
     "agents/ppo_agent.py",
     "models/best_automaton.pt"
-  ]
+  ],
+  "status": "deferred",
+  "experimental_result": "RL search superseded by MDP value iteration in concept 008."
 }
