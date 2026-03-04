@@ -171,8 +171,8 @@ average performance is a valid lower bound using concentration inequalities.
 \paragraph{Existence and early bounds.}
 Chv\'{a}tal and Sankoff \citep{chvtal1975} proved that $\gamma_k$ exists for all
 $k \geq 2$ by establishing superadditivity of $\E[\LCS(X_n, Y_n)]$ and applying
-Fekete's lemma. They also computed small-$n$ exact values but did not give
-nontrivial asymptotic bounds.
+Fekete's lemma \citep{fekete1923}. They also computed small-$n$ exact values
+but did not give nontrivial asymptotic bounds.
 
 \paragraph{Deterministic FSM lower bounds.}
 Danc\'{i}k \citep{dancik1994} introduced the paradigm of computing lower bounds
@@ -233,8 +233,10 @@ longest common subsequence.
 The sequence $a_n := \E[\LCS(X_n, Y_n)]$ is superadditive: $a_{m+n} \geq
 a_m + a_n$. This follows because one can independently find common
 subsequences in the first $m$ and the remaining $n$ characters. By Fekete's
-lemma \citep{kingman1968}, the limit $\gamma_2 = \sup_n a_n / n = \lim_{n
+lemma \citep{fekete1923}, the limit $\gamma_2 = \sup_n a_n / n = \lim_{n
 \to \infty} a_n / n$ exists and satisfies $a_N / N \leq \gamma_2$ for all $N$.
+Kingman's subadditive ergodic theorem \citep{kingman1968} provides the
+stochastic generalization that underpins the almost-sure convergence.
 
 \subsection{Lower Bounds via Heuristic Policies}
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -43,6 +43,14 @@ Vladimír Dancík.
 \newblock \emph{Expected Length of Longest Common Subsequences}.
 \newblock PhD thesis, University of Warwick, 1994.
 \newblock URL \url{https://wrap.warwick.ac.uk/id/eprint/107547/}.
+
+\bibitem[Fekete(1923)]{fekete1923}
+Michael Fekete.
+\newblock \"uber die {V}erteilung der {W}urzeln bei gewissen algebraischen
+  {G}leichungen mit ganzzahligen {K}oeffizienten.
+\newblock \emph{Mathematische Zeitschrift}, 17\penalty0 (1):\penalty0 228--249,
+  1923.
+\newblock \doi{10.1007/BF01479243}.
 
 \bibitem[Hauser et~al.(2006)Hauser, Martínez, and Matzinger]{hauser2006}
 Raphael~Andreas Hauser, S.~Martínez, and H.~Matzinger.
