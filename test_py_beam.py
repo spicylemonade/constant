@@ -1,3 +1,12 @@
+"""
+Pure-Python beam-search reference test.
+
+Tests the Python-only beam search on a small (N=100) example. Used as
+the ground truth reference for verifying the Numba implementation.
+
+Usage:
+    python test_py_beam.py
+"""
 import numpy as np
 
 def run_test():

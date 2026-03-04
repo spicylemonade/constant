@@ -1,3 +1,13 @@
+"""
+Evaluation harness for Chvátal–Sankoff bound methods.
+
+Measures each method's bound value, computation time, and tightness
+relative to the estimated true constant γ₂ ≈ 0.8122. Saves structured
+results to results/baseline_metrics.json.
+
+Usage:
+    python test_harness.py
+"""
 import time
 import json
 import os

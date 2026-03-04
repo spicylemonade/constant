@@ -14,5 +14,7 @@
     "src/lyapunov_net.py",
     "src/train_bound.py",
     "models/lyapunov_weights.pt"
-  ]
+  ],
+  "status": "deferred",
+  "experimental_result": "Neural Lyapunov approach interesting but requires verified neural network outputs."
 }

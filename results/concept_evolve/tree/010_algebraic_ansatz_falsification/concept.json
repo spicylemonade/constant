@@ -9,5 +9,7 @@
   "analogical_connections": "Similar to how the three-body problem fails to have a closed-form algebraic integral of motion, the infinite-state automaton of LCS may resist exact algebraic closure.",
   "implementation_hypothesis": "Formulate a finite algebraic relaxation using Lasserre (Sum of Squares) hierarchy. Track the degree at which the algebraic closure fails to accurately represent the infinite limit.",
   "experiment_seed": "Construct the transition polynomials for k-state approximations. Check Gr\u00f6bner bases for exact rational/algebraic roots.",
-  "folder_plan": "010_algebraic_ansatz_falsification"
+  "folder_plan": "010_algebraic_ansatz_falsification",
+  "status": "deferred",
+  "experimental_result": "More useful for upper bounds; deferred for lower bound work."
 }

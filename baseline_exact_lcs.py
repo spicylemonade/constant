@@ -1,37 +1,16 @@
+"""
+Exact expected LCS computation for short binary strings.
+
+Computes E[LCS(X_n, Y_n)] exactly for uniformly random binary strings of
+length n, using DP over the frontier (row difference representation).
+Practical for n <= 12 in pure Python.
+
+Usage:
+    python baseline_exact_lcs.py [n]
+
+Verified: n=8 yields E[LCS] = 5.4691162109375 (ratio 0.683640).
+"""
 import sys
-from functools import lru_cache
-
-def exact_expected_lcs(n):
-    # This function uses dynamic programming over the prefixes of strings.
-    # To avoid the state space explosion of 2^(2n), we use the fact that LCS
-    # only depends on the DP frontier (the differences between adjacent DP cells).
-    # Since n <= 15, we can just compute the distribution.
-    # Actually, a much simpler approach for n <= 15 is to track the set of all
-    # possible states of the DP array. But for Python, even that might be slow.
-    
-    # Wait, 4^n for n=12 is 1.6e7, which is fast in C/C++, but in Python n=15 (10^9) is too slow for naive.
-    # However, DP over the "frontier" state is well-known.
-    # The frontier of the DP matrix row can be encoded as a bitstring of length m.
-    # We can compute the distribution of the frontier when the second string is random.
-    # Let's write a simple memoized DFS.
-
-    @lru_cache(None)
-    def compute_expected_lcs(x_str, y_len):
-        if y_len == 0:
-            return 0
-        # If we fix X, and Y is uniformly random, the expected LCS can be computed by DP.
-        # But wait, we need E[LCS(X, Y)] for uniform X and Y.
-        pass
-
-    # For a truly simple baseline, we'll just write a script that works up to n=10 in Python,
-    # and maybe use Numba or just accept n=15 takes a few minutes if run.
-    pass
-
-# Let's implement DP over the frontier.
-# Let X be a fixed string of length n. For a random Y of length n, we can compute the expected LCS.
-# Then we average over all X. Since by symmetry E[LCS(X,Y)] only depends on the isomorphism class of X,
-# we can group X by their canonical representations. But for n=15, 2^15 = 32768 is small.
-# For each X in {0,1}^n, we compute E_Y[LCS(X,Y)] using a DP over the frontier.
 
 def get_next_frontier(frontier, x, y_char):
     # frontier is a tuple of n integers (the DP row)

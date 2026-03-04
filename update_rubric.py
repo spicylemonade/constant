@@ -1,3 +1,12 @@
+"""
+Utility to update research rubric item status.
+
+Updates a single item in research_rubric.json and recomputes summary counts.
+
+Usage:
+    python update_rubric.py <item_id> <status> [error] [notes]
+    python update_rubric.py item_001 completed "" "Done with analysis"
+"""
 import json
 import sys
 
@@ -27,4 +36,9 @@ def update_rubric(item_id, status, error=None, notes=None):
         json.dump(data, f, indent=2)
 
 if __name__ == '__main__':
-    update_rubric(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+    update_rubric(
+        sys.argv[1],
+        sys.argv[2],
+        sys.argv[3] if len(sys.argv) > 3 else None,
+        sys.argv[4] if len(sys.argv) > 4 else None,
+    )

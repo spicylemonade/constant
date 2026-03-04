@@ -9,5 +9,7 @@
   "analogical_connections": "Traffic flow optimization (maximizing throughput) corresponds to maximizing the shared subsequence between random environments.",
   "implementation_hypothesis": "Identify the exact invariant measure for the frog dynamics model on a finite ring, compute the macroscopic current, and extrapolate as ring size approaches infinity.",
   "experiment_seed": "Simulate frog dynamics (Bukh & Cox 2022) for small N, track particle current J, and derive its exact generating function.",
-  "folder_plan": "002_push_tasep_duality"
+  "folder_plan": "002_push_tasep_duality",
+  "status": "deferred",
+  "experimental_result": "TASEP duality relevant for upper bounds; deferred since focus was lower bounds."
 }

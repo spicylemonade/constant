@@ -13,5 +13,7 @@
   "folder_plan": [
     "src/doob_martingale.py",
     "src/variance_profile.py"
-  ]
+  ],
+  "status": "validated",
+  "experimental_result": "Hoeffding concentration bound successfully applied in our main result (concept 005). Key enabler."
 }

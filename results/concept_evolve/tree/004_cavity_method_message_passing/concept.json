@@ -9,5 +9,7 @@
   "analogical_connections": "LCS is analogous to the ground state energy of a disordered 2D lattice. Message passing computes the free energy.",
   "implementation_hypothesis": "Implement Belief Propagation on the bipartite alignment graph of two random sequences. Use the Density Evolution framework to track message distributions and compute the expected asymptotic free energy.",
   "experiment_seed": "Run Belief Propagation on random pairs of strings of length N=1000. Compare the zero-temperature limit of free energy with known lower bounds.",
-  "folder_plan": "004_cavity_method_message_passing"
+  "folder_plan": "004_cavity_method_message_passing",
+  "status": "deferred",
+  "experimental_result": "Cavity method requires replica symmetry assumptions not rigorously justified for LCS."
 }

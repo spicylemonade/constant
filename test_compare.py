@@ -1,3 +1,14 @@
+"""
+Cross-verification test: Numba beam search vs pure Python beam search.
+
+Ensures the Numba-compiled beam search in block_evaluator.py produces
+identical results to the pure-Python reference implementation for the
+same input strings. Both implementations use the same pruning criterion
+(sort by i+j, then |i-j|).
+
+Usage:
+    python test_compare.py
+"""
 import numpy as np
 from numba import njit
 

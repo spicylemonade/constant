@@ -14,5 +14,7 @@
     "src/metropolis.py",
     "src/annealing.py",
     "data/energy_scaling.csv"
-  ]
+  ],
+  "status": "deferred",
+  "experimental_result": "Polymer free energy interpretation explored; no quantitative bound obtained."
 }

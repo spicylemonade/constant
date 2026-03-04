@@ -1,3 +1,13 @@
+"""
+Lueker 2009 upper bound baseline for the Chvátal–Sankoff constant γ₂.
+
+Returns the known upper bound 0.826280 from Lueker's dual probabilistic
+method. This is a stub that reproduces the literature value; the full
+branch-and-bound computation requires significant resources.
+
+Usage:
+    python baseline_lueker_upper.py
+"""
 import sys
 
 def lueker_upper_bound():

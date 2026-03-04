@@ -13,5 +13,7 @@
   "folder_plan": [
     "src/bethe_solver.py",
     "src/vertex_model.py"
-  ]
+  ],
+  "status": "deferred",
+  "experimental_result": "Bethe ansatz approach requires exact solvability not available for LCS."
 }
